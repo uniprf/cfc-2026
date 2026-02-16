@@ -2,14 +2,34 @@
 <html>
 <head>
   <title>UNIPRF CFC-2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 </head>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .wrap {
+    height: 100vh;       /* altura da viewport */
+    width: 100vw;        /* largura da viewport */
+  }
+  iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+</style>
 <body>
-  <iframe src="https://script.google.com/a/macros/prf.gov.br/s/AKfycbxf9aTP2apC1f7oqCJ3lvXCN8Wdhui4wNCaIfX75wkqYB2gpJZlWnwIcwgVV_19_to/exec"
-    width="100%"
-    height="100%"
-    allowfullscreen="true"
-    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
-  </iframe>
+  <div class="wrap">
+    <iframe src="https://script.google.com/a/macros/prf.gov.br/s/AKfycbxf9aTP2apC1f7oqCJ3lvXCN8Wdhui4wNCaIfX75wkqYB2gpJZlWnwIcwgVV_19_to/exec"
+      width="100%"
+      height="100%"
+      allowfullscreen="true"
+      style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+    </iframe>
+  </div>
 
   <script>
     window.onload = function() {
